@@ -48,6 +48,13 @@ public class Lotto {
         }
     }
 
+    public List<Integer> getNumbers() {
+        return Collections.unmodifiableList(this.numbers);
+    }
 
+    @Override
+    public String toString() {
+        return this.numbers.toString();
+    }
 
 }
