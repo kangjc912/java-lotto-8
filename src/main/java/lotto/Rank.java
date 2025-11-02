@@ -17,6 +17,8 @@ public enum Rank {
     private final boolean bonus;
     private final int price;
     private final String text;
+
+
     Rank(int matchCount, boolean bonus, int price, String text) {
         this.matchCount = matchCount;
         this.bonus = bonus;
@@ -52,6 +54,23 @@ public enum Rank {
 
 
         return MISS;
+    }
+
+
+
+    public String getMessage() {
+        return text;
+    }
+
+
+
+    public int getPrice() {
+        return price;
+    }
+
+
+    public int getMatchCount() {
+        return matchCount;
     }
 
 }
